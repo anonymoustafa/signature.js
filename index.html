@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect Points</title>
+    <title>Qwerty Signature</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="canvas" width="800" height="600"></canvas>
-    <button id="export">Export as PNG</button>
+    <div class="container">
+        <header>
+            <h1>Qwerty Signature</h1>
+            <div class="settings-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+        </header>
+        <div class="keyboard">
+            <div class="key-row">
+                <span>q</span><span>w</span><span>e</span><span>r</span><span>t</span><span>y</span><span>u</span><span>i</span><span>o</span><span>p</span>
+            </div>
+            <div class="key-row">
+                <span>a</span><span>s</span><span>d</span><span>f</span><span>g</span><span>h</span><span>j</span><span>k</span><span>l</span>
+            </div>
+            <div class="key-row">
+                <span>z</span><span>x</span><span>c</span><span>v</span><span>b</span><span>n</span><span>m</span>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="text" id="name-input" placeholder="Type your name here...">
+            <button id="generate-button">Generate!</button>
+        </div>
+        <div class="signature-container">
+            <!-- Placeholder for the signature -->
+            <svg id="signature-svg" xmlns="http://www.w3.org/2000/svg" width="577" height="200" viewBox="0 0 577 200"></svg>
+        </div>
+        <button id="export-button">Export Signature</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
